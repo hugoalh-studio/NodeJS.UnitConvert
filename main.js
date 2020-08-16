@@ -8,6 +8,8 @@
  */
 const version = "1.0.0";
 
+module.exports.angle = require("./angle.js");
+module.exports.Angle = require("./angle/class.js");
 module.exports.temperature = require("./temperature.js");
 module.exports.Temperature = require("./temperature/class.js");
 module.exports.v = version;
