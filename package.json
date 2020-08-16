@@ -1,0 +1,31 @@
+{
+	"name": "@hugoalh/unit-convert",
+	"version": "1.0.0",
+	"description": "A module/library to convert unit.",
+	"keywords": [
+		"nodejs",
+		"convert",
+		"converter",
+		"temperature"
+	],
+	"homepage": "https://github.com/hugoalh/NodeJS.UnitConvert#readme",
+	"bugs": {
+		"url": "https://github.com/hugoalh/NodeJS.UnitConvert/issues"
+	},
+	"license": "MIT",
+	"author": "hugoalh",
+	"main": "main.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hugoalh/NodeJS.UnitConvert.git"
+	},
+	"dependencies": {
+		"@hugoalh/advanced-determine": "^3.2.0",
+		"@hugoalh/more-array": "^1.1.0"
+	},
+	"engines": {
+		"node": ">= 10.0.0",
+		"npm": ">= 6.0.0"
+	},
+	"private": false
+}
