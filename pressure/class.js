@@ -70,10 +70,10 @@ class Pressure {
 	};
 	/**
 	 * @method
-	 * @param {string} outputUnit
+	 * @param {string} [outputUnit="Pascal"]
 	 * @returns {number}
 	 */
-	to(outputUnit) {
+	to(outputUnit = "Pascal") {
 		outputUnit = pressureUnitMap[outputUnit];
 		if (typeof outputUnit != "string") {
 			return internalService.prefabReferenceError("outputUnit", "Unknown/Uncovered unit.");

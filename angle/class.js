@@ -71,10 +71,10 @@ class Angle {
 	};
 	/**
 	 * @method
-	 * @param {string} outputUnit
+	 * @param {string} [outputUnit="Radian"]
 	 * @returns {number}
 	 */
-	to(outputUnit) {
+	to(outputUnit = "Radian") {
 		outputUnit = angleUnitMap[outputUnit];
 		if (typeof outputUnit != "string") {
 			return internalService.prefabReferenceError("outputUnit", "Unknown/Uncovered unit.");

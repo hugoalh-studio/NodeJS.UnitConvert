@@ -88,10 +88,10 @@ class Temperature {
 	};
 	/**
 	 * @method
-	 * @param {string} outputUnit
+	 * @param {string} [outputUnit="Kelvin"]
 	 * @returns {number}
 	 */
-	to(outputUnit) {
+	to(outputUnit = "Kelvin") {
 		outputUnit = temperatureUnitMap[outputUnit];
 		if (typeof outputUnit != "string") {
 			return internalService.prefabReferenceError("outputUnit", "Unknown/Uncovered unit.");
