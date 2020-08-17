@@ -4,8 +4,11 @@
 	"description": "A module/library to convert unit.",
 	"keywords": [
 		"nodejs",
+		"unit",
 		"convert",
 		"converter",
+		"angle",
+		"pressure",
 		"temperature"
 	],
 	"homepage": "https://github.com/hugoalh/NodeJS.UnitConvert#readme",
