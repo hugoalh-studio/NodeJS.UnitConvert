@@ -8,6 +8,7 @@ const internalService = require("../internalservice.js");
 /**
  * @function kelvinToFahrenheit
  * @param {number} value
+ * @returns {number}
  */
 function kelvinToFahrenheit(value) {
 	return (

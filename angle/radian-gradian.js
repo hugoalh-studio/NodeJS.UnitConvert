@@ -8,6 +8,7 @@ const internalService = require("../internalservice.js");
 /**
  * @function radianToGradian
  * @param {number} value
+ * @returns {number}
  */
 function radianToGradian(value) {
 	return (

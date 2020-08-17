@@ -8,6 +8,7 @@ const internalService = require("../internalservice.js");
 /**
  * @function kelvinToNewton
  * @param {number} value
+ * @returns {number}
  */
 function kelvinToNewton(value) {
 	return (

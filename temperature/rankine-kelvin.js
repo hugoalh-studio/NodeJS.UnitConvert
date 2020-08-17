@@ -8,6 +8,7 @@ const internalService = require("../internalservice.js");
 /**
  * @function rankineToKelvin
  * @param {number} value
+ * @returns {number}
  */
 function rankineToKelvin(value) {
 	return (

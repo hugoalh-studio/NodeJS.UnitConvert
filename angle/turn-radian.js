@@ -8,6 +8,7 @@ const internalService = require("../internalservice.js");
 /**
  * @function turnToRadian
  * @param {number} value
+ * @returns {number}
  */
 function turnToRadian(value) {
 	return (

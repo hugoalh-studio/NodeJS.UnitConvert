@@ -8,6 +8,7 @@ const internalService = require("../internalservice.js");
 /**
  * @function kelvinToRankine
  * @param {number} value
+ * @returns {number}
  */
 function kelvinToRankine(value) {
 	return (

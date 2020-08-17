@@ -8,6 +8,7 @@ const internalService = require("../internalservice.js");
 /**
  * @function delisleToKelvin
  * @param {number} value
+ * @returns {number}
  */
 function delisleToKelvin(value) {
 	return (

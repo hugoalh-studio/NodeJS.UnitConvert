@@ -8,6 +8,7 @@ const internalService = require("../internalservice.js");
 /**
  * @function reaumurToKelvin
  * @param {number} value
+ * @returns {number}
  */
 function reaumurToKelvin(value) {
 	return (

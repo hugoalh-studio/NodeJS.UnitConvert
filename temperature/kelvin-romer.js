@@ -8,6 +8,7 @@ const internalService = require("../internalservice.js");
 /**
  * @function kelvinToRomer
  * @param {number} value
+ * @returns {number}
  */
 function kelvinToRomer(value) {
 	return (
