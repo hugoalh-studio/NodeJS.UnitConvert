@@ -44,24 +44,21 @@ NodeJS (v10+) & NPM (v6+):
 
 ### API
 
-- `isArray(item)`
-- `isBoolean(item, option?)`
-- `isBuffer(item, option?)`
-- `isDate(item)`
-- `isJSON(item)`
-- `isNull(item, option?)`
-- `isNumber(item)`
-- `isRegularExpression(item)`
-- `isString(item, option?)`
-- `isStringASCII(item)`
-- `isStringifyJSON(item)`
-- `isStringLowerCase(item)`
-- `isStringUpperCase(item)`
-- `isUndefined(item, option?)`
+- ```javascript
+  new Angle(inputValue, inputUnit?)
+    .to(outputUnit?)
+  ```
+- ```javascript
+  new Pressure(inputValue, inputUnit?)
+    .to(outputUnit?)
+  ```
+- ```javascript
+  new Temperature(inputValue, inputUnit?)
+    .to(outputUnit?)
+  ```
 
 ### Example
 
 ```javascript
-const unitConvert = require("@hugoalh-studio/unit-convert");
-
+const unitConvert = require("@hugoalh/unit-convert");
 ```
