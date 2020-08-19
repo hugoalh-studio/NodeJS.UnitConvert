@@ -24,7 +24,7 @@
 A module/library to convert unit.
 
 - Angle
-- [ ] Energy
+- [ ] Colour
 - [ ] Length
 - Pressure
 - Temperature
@@ -49,6 +49,14 @@ NodeJS (v10+) & NPM (v6+):
     .to(outputUnit?)
   ```
 - ```javascript
+  new Colour(inputValue, inputUnit?)
+    .to(outputUnit?)
+  ```
+- ```javascript
+  new Length(inputValue, inputUnit?)
+    .to(outputUnit?)
+  ```
+- ```javascript
   new Pressure(inputValue, inputUnit?)
     .to(outputUnit?)
   ```
@@ -56,9 +64,15 @@ NodeJS (v10+) & NPM (v6+):
   new Temperature(inputValue, inputUnit?)
     .to(outputUnit?)
   ```
+- ```javascript
+  new Weight(inputValue, inputUnit?)
+    .to(outputUnit?)
+  ```
 
 ### Example
 
 ```javascript
 const unitConvert = require("@hugoalh/unit-convert");
+
+console.log(new Temperature(25, "C").to("K"));// 298.15
 ```

@@ -11,19 +11,19 @@
 		"pressure",
 		"temperature"
 	],
-	"homepage": "https://github.com/hugoalh/NodeJS.UnitConvert#readme",
+	"homepage": "https://github.com/hugoalh-studio/NodeJS.UnitConvert#readme",
 	"bugs": {
-		"url": "https://github.com/hugoalh/NodeJS.UnitConvert/issues"
+		"url": "https://github.com/hugoalh-studio/NodeJS.UnitConvert/issues"
 	},
 	"license": "MIT",
 	"author": "hugoalh",
 	"main": "main.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/hugoalh/NodeJS.UnitConvert.git"
+		"url": "git+https://github.com/hugoalh-studio/NodeJS.UnitConvert.git"
 	},
 	"dependencies": {
-		"@hugoalh/advanced-determine": "^3.2.0",
+		"@hugoalh/advanced-determine": "^3.2.1",
 		"@hugoalh/more-array": "^1.1.0"
 	},
 	"engines": {
