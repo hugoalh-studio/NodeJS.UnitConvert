@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function kelvinToNewton(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? ((value - 273.15) * 0.33) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? (value - 273.15) * 0.33 : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = kelvinToNewton;

@@ -66,26 +66,26 @@ class Temperature {
 	constructor(inputValue, inputUnit = "Kelvin") {
 		if (advancedDetermine.isNumber(inputValue) != true) {
 			internalService.prefabTypeError("inputValue", "number");
-		};
+		}
 		if (advancedDetermine.isString(inputUnit) != true) {
 			internalService.prefabTypeError("inputUnit", "string");
-		};
+		}
 		inputUnit = temperatureUnitMap[inputUnit];
 		if (typeof inputUnit != "string") {
 			internalService.prefabReferenceError("inputUnit", "Unknown/Uncovered unit.");
-		};
+		}
 		if (inputUnit === "Kelvin") {
 			this.kelvin = inputValue;
 		} else {
 			this[inputUnit.toLowerCase()] = inputValue;
 			this.kelvin = require(`./${inputUnit.toLowerCase()}-kelvin.js`)(inputValue);
-		};
+		}
 		temperatureUnitList.forEach((element) => {
 			if (element !== "Kelvin" && element !== inputUnit) {
 				this[element.toLowerCase()] = require(`./kelvin-${element.toLowerCase()}.js`)(this.kelvin);
-			};
+			}
 		});
-	};
+	}
 	/**
 	 * @method
 	 * @param {string} [outputUnit="Kelvin"]
@@ -95,8 +95,8 @@ class Temperature {
 		outputUnit = temperatureUnitMap[outputUnit];
 		if (typeof outputUnit != "string") {
 			return internalService.prefabReferenceError("outputUnit", "Unknown/Uncovered unit.");
-		};
+		}
 		return this[outputUnit.toLowerCase()];
-	};
-};
+	}
+}
 module.exports = Temperature;

@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function reaumurToKelvin(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? (value * 1.25 + 273.15) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? value * 1.25 + 273.15 : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = reaumurToKelvin;

@@ -48,26 +48,26 @@ class Pressure {
 	constructor(inputValue, inputUnit = "Pascal") {
 		if (advancedDetermine.isNumber(inputValue) != true) {
 			internalService.prefabTypeError("inputValue", "number");
-		};
+		}
 		if (advancedDetermine.isString(inputUnit) != true) {
 			internalService.prefabTypeError("inputUnit", "string");
-		};
+		}
 		inputUnit = pressureUnitMap[inputUnit];
 		if (typeof inputUnit != "string") {
 			internalService.prefabReferenceError("inputUnit", "Unknown/Uncovered unit.");
-		};
+		}
 		if (inputUnit === "Pascal") {
 			this.pascal = inputValue;
 		} else {
 			this[inputUnit.toLowerCase()] = inputValue;
 			this.pascal = require(`./${inputUnit.toLowerCase()}-pascal.js`)(inputValue);
-		};
+		}
 		pressureUnitList.forEach((element) => {
 			if (element !== "Pascal" && element !== inputUnit) {
 				this[element.toLowerCase()] = require(`./pascal-${element.toLowerCase()}.js`)(this.pascal);
-			};
+			}
 		});
-	};
+	}
 	/**
 	 * @method
 	 * @param {string} [outputUnit="Pascal"]
@@ -77,8 +77,8 @@ class Pressure {
 		outputUnit = pressureUnitMap[outputUnit];
 		if (typeof outputUnit != "string") {
 			return internalService.prefabReferenceError("outputUnit", "Unknown/Uncovered unit.");
-		};
+		}
 		return this[outputUnit.toLowerCase()];
-	};
-};
+	}
+}
 module.exports = Pressure;

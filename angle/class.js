@@ -49,26 +49,26 @@ class Angle {
 	constructor(inputValue, inputUnit = "Radian") {
 		if (advancedDetermine.isNumber(inputValue) != true) {
 			internalService.prefabTypeError("inputValue", "number");
-		};
+		}
 		if (advancedDetermine.isString(inputUnit) != true) {
 			internalService.prefabTypeError("inputUnit", "string");
-		};
+		}
 		inputUnit = angleUnitMap[inputUnit];
 		if (typeof inputUnit != "string") {
 			internalService.prefabReferenceError("inputUnit", "Unknown/Uncovered unit.");
-		};
+		}
 		if (inputUnit === "Radian") {
 			this.radian = inputValue;
 		} else {
 			this[inputUnit.toLowerCase()] = inputValue;
 			this.radian = require(`./${inputUnit.toLowerCase()}-radian.js`)(inputValue);
-		};
+		}
 		angleUnitList.forEach((element) => {
 			if (element !== "Radian" && element !== inputUnit) {
 				this[element.toLowerCase()] = require(`./radian-${element.toLowerCase()}.js`)(this.radian);
-			};
+			}
 		});
-	};
+	}
 	/**
 	 * @method
 	 * @param {string} [outputUnit="Radian"]
@@ -78,8 +78,8 @@ class Angle {
 		outputUnit = angleUnitMap[outputUnit];
 		if (typeof outputUnit != "string") {
 			return internalService.prefabReferenceError("outputUnit", "Unknown/Uncovered unit.");
-		};
+		}
 		return this[outputUnit.toLowerCase()];
-	};
-};
+	}
+}
 module.exports = Angle;

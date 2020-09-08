@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function pascalToBar(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? (value / 1e5) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? value / 1e5 : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = pascalToBar;

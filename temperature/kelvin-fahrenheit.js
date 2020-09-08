@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function kelvinToFahrenheit(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? (value * 1.8 - 459.67) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? value * 1.8 - 459.67 : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = kelvinToFahrenheit;

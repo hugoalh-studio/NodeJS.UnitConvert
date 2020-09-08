@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function psiToPascal(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? (value * ((0.45359237 * 9.80665) / (Math.pow(0.0254, 2)))) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? value * ((0.45359237 * 9.80665) / Math.pow(0.0254, 2)) : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = psiToPascal;

@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function kelvinToDelisle(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? ((373.15 - value) * 1.5) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? (373.15 - value) * 1.5 : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = kelvinToDelisle;

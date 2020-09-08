@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function pascalToTorr(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? (value / (101325 / 760)) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? value / (101325 / 760) : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = pascalToTorr;

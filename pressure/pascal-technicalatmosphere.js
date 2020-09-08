@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function pascalToTechnicalAtmosphere(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? (value / 98066.5) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? value / 98066.5 : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = pascalToTechnicalAtmosphere;

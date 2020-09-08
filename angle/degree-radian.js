@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function degreeToRadian(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? (value * (Math.PI / 180)) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? value * (Math.PI / 180) : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = degreeToRadian;

@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function turnToRadian(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? (value * (2 * Math.PI)) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? value * (2 * Math.PI) : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = turnToRadian;

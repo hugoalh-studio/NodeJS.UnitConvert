@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function gradianToRadian(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? (value * (Math.PI / 200)) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? value * (Math.PI / 200) : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = gradianToRadian;

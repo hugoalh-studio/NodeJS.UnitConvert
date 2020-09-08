@@ -12,7 +12,7 @@ const internalService = require("../internalservice.js");
  */
 function romerToKelvin(value) {
 	return (
-		(advancedDetermine.isNumber(value) == true) ? ((value - 7.5) / 0.525 + 273.15) : internalService.prefabTypeError("value", "number")
+		advancedDetermine.isNumber(value) == true ? (value - 7.5) / 0.525 + 273.15 : internalService.prefabTypeError("value", "number")
 	);
-};
+}
 module.exports = romerToKelvin;
