@@ -23,7 +23,7 @@
 		"url": "git+https://github.com/hugoalh-studio/NodeJS.UnitConvert.git"
 	},
 	"dependencies": {
-		"@hugoalh/advanced-determine": "^3.2.1",
+		"@hugoalh/advanced-determine": "^3.2.2",
 		"@hugoalh/more-array": "^1.1.0"
 	},
 	"engines": {
