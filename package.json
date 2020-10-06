@@ -24,7 +24,7 @@
 	},
 	"dependencies": {
 		"@hugoalh/advanced-determine": "^3.3.1",
-		"@hugoalh/more-array": "^1.1.0"
+		"@hugoalh/more-array": "^1.1.1"
 	},
 	"engines": {
 		"node": ">= 10.0.0",
