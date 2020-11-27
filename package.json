@@ -4,12 +4,16 @@
 	"description": "A module/library to convert unit.",
 	"keywords": [
 		"nodejs",
-		"unit",
+		"angle",
+		"color",
+		"colour",
 		"convert",
 		"converter",
-		"angle",
+		"length",
 		"pressure",
-		"temperature"
+		"temperature",
+		"unit",
+		"weight"
 	],
 	"homepage": "https://github.com/hugoalh-studio/NodeJS.UnitConvert#readme",
 	"bugs": {

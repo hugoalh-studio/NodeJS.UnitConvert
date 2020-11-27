@@ -62,11 +62,11 @@ A NodeJS library/module to convert unit.
 ### 🌟 Feature
 
 - Angle
-- [ ] Colour
-- [ ] Length
+- Colour
+- Length
 - Pressure
 - Temperature
-- [ ] Weight
+- Weight
 
 ## 📄 Documentation
 
